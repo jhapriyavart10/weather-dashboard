@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+### **Edited README:**
+```markdown
+# Next.js Dashboard - Crypto, Weather & News  
+A modern dashboard application built with **Next.js** that integrates **cryptocurrency data, weather forecasts, and news** in a single interface. The dashboard provides real-time updates and a responsive design for seamless use on any device.
 
-## Getting Started
+![Dashboard Preview](https://via.placeholder.com/800x450?text=Dashboard+Preview)
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### **Cryptocurrency Tracking**  
+- Real-time price updates via **WebSocket**  
+- Detailed information for major cryptocurrencies  
+- Historical price charts with customizable time ranges  
+- Auto-fallback to polling when WebSocket is unavailable  
+
+### **Weather Forecasts**  
+- Current weather conditions for multiple cities  
+- 7-day weather forecasts with detailed metrics  
+- **Temperature, humidity, wind speed, and more**  
+- Supports **major global cities**, including Indian locations  
+
+### **News Feed**  
+- Latest **cryptocurrency and blockchain news**  
+- Source attribution and timestamps  
+- Direct links to full articles  
+
+### **User Experience**  
+- **Dark and light theme** support  
+- Favorites system for both cities and cryptocurrencies  
+- **Responsive design** for mobile, tablet, and desktop  
+- **Real-time data refresh** with status indicators  
+
+## **Technologies Used**
+- **Next.js 15** with App Router  
+- **TypeScript** for type safety  
+- **Redux Toolkit** for state management  
+- **Tailwind CSS** for styling  
+- **WebSocket** for real-time data  
+- **REST API integrations**  
+- **Environment Variables** for configuration  
+
+## **Getting Started**
+
+### **Prerequisites**
+- **Node.js 18.17** or later  
+- **npm** or **yarn** package manager  
+
+### **Installation**
+```sh
+git clone https://github.com/jhapriyavart10/weather-dashboard.git
+cd nextjs-dashboard
+npm install  # or yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### **Environment Variables**
+Create a `.env.local` file in the root directory with the following variables:
+```
+NEXT_PUBLIC_API_KEY=your_api_key
+NEXT_PUBLIC_WEATHER_API_KEY=your_weather_api_key
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### **Development**
+```sh
+npm run dev  # or yarn dev
+```
+Visit [http://localhost:3000](http://localhost:3000) to see the application.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## **Deployment**
 
-## Learn More
+### **Vercel**
+```sh
+vercel --prod
+```
+Deployed link: [(https://nextjs-dashboard-three-chi-99.vercel.app/)]
 
-To learn more about Next.js, take a look at the following resources:
+### **Netlify**
+1. Connect the GitHub repository to Netlify.  
+2. Add **environment variables** in the Netlify dashboard.  
+3. Deploy the project.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## **Project Structure**
+```
+/components
+  ├── Crypto.tsx
+  ├── Weather.tsx
+  ├── News.tsx
+/pages
+  ├── index.tsx
+  ├── api
+      ├── crypto
+      ├── weather
+      ├── news
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## **Features in Development**
+- **User authentication**  
+- **Customizable dashboard layouts**  
+- **Additional data visualizations**  
+- **Mobile app version**  
 
-## Deploy on Vercel
+## **Contributing**
+Contributions are welcome! Please feel free to submit a **Pull Request**.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## **License**
+This project is licensed under the **MIT License** – see the LICENSE file for details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## **Acknowledgements**
+- **CoinGecko API** for cryptocurrency data  
+- **OpenWeatherMap API** for weather forecasts  
+- **NewsData.io** for news articles  
+
+---
+
+**Created by [Priyavart Jha](https://github.com/priyavart-jha)** 🚀  
