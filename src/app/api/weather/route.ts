@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-const OPEN_WEATHER_API_KEY = '7a051b23b1dd5c26a40ec8bf336d84f8';
+const OPEN_WEATHER_API_KEY = process.env.OPEN_WEATHER_API_KEY;
 const DEFAULT_CITIES = [
   { id: 'new-york', name: 'New York', country: 'US' },
   { id: 'london', name: 'London', country: 'GB' },

@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 // In a real app, store this in an environment variable
-const NEWS_API_KEY = 'pub_77747baa07f0dd66169fb3769a99fac676661';
+const NEWS_API_KEY = process.env.NEWS_API_KEY ;
 
 export async function GET() {
   try {
